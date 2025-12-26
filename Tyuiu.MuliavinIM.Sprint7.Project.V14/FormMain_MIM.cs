@@ -36,21 +36,17 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             dataGridViewRoutes_MIM.ReadOnly = true;
         }
 
-
-        // ➕ Добавить строку
         private void buttonAddRoute_MIM_Click(object sender, EventArgs e)
         {
             routesTable.Rows.Add("", "", "", "", "", "");
         }
 
-        // ✏️ Редактировать
         private void buttonEditRoute_MIM_Click(object sender, EventArgs e)
         {
             editMode = true;
             dataGridViewRoutes_MIM.ReadOnly = false;
         }
 
-        // ❌ Удалить
         private void buttonDeleteRoute_MIM_Click(object sender, EventArgs e)
         {
             if (dataGridViewRoutes_MIM.CurrentRow != null)
@@ -61,7 +57,6 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             }
         }
 
-        // 💾 Сохранить CSV + запретить редактирование
         private void buttonSaveData_MIM_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveDialog = new SaveFileDialog
@@ -85,7 +80,6 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             dataGridViewRoutes_MIM.ReadOnly = true;
         }
 
-        // 📂 Загрузить CSV
         private void buttonLoadData_MIM_Click(object sender, EventArgs e)
         {
             OpenFileDialog openDialog = new OpenFileDialog
@@ -109,7 +103,6 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             dataGridViewRoutes_MIM.ReadOnly = true;
         }
 
-        // 🔍 Поиск (фильтрация)
         private void buttonSearch_MIM_Click(object sender, EventArgs e)
         {
             string value = textBoxSearchRoute_MIM.Text.Trim();
@@ -119,14 +112,12 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             bindingSource.Filter = $"[Номер маршрута] = '{value}'";
         }
 
-        // 🔄 Сброс фильтра
         private void buttonResetSearch_MIM_Click(object sender, EventArgs e)
         {
             textBoxSearchRoute_MIM.Clear();
             bindingSource.RemoveFilter();
         }
 
-        // 📊 Переход к анализу
         private void buttonAnalysis_MIM_Click(object sender, EventArgs e)
         {
             FormAnalysis_MIM analysisForm = new FormAnalysis_MIM(this, routesTable);
@@ -136,8 +127,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
 
         private void buttonHelp_MIM_Click(object sender, EventArgs e)
         {
-            FormAbout FormAbout = new FormAbout();
-            FormAbout.ShowDialog();
+            MessageBox.Show("Разработчик Мулявин Иван Михайлович \r\nгруппа ИСТНб-25-1\r\n\r\nТюменский Индустриальный Университет \r\nВысшая школа цифровых технологий\r\n\r\nВнутренне имя Tyuiu.MuliavinIM.Sprint7.Project.V14");
         }
     }
 }
