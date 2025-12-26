@@ -129,5 +129,10 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
         {
             MessageBox.Show("Разработчик Мулявин Иван Михайлович \r\nгруппа ИСТНб-25-1\r\n\r\nТюменский Индустриальный Университет \r\nВысшая школа цифровых технологий\r\n\r\nВнутренне имя Tyuiu.MuliavinIM.Sprint7.Project.V14");
         }
+
+        private void toolTipMIM_Popup(object sender, PopupEventArgs e)
+        {
+
+        }
     }
 }

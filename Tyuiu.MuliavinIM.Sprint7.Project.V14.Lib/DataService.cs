@@ -13,7 +13,6 @@
 
     public class DataService_MIM
     {
-        // ===== CSV =====
         public List<TransportRoute_MIM> LoadFromCsv(string path)
         {
             var result = new List<TransportRoute_MIM>();
@@ -53,7 +52,6 @@
             File.WriteAllLines(path, lines);
         }
 
-        // ===== CRUD =====
         public void AddRoute(List<TransportRoute_MIM> data, TransportRoute_MIM route)
         {
             data.Add(route);
@@ -71,7 +69,6 @@
                 data.RemoveAt(index);
         }
 
-        // ===== SEARCH =====
         public List<TransportRoute_MIM> SearchByRouteNumber(
             List<TransportRoute_MIM> data,
             string routeNumber)
@@ -81,7 +78,6 @@
                 .ToList();
         }
 
-        // ===== FILTER =====
         public List<TransportRoute_MIM> FilterByTransportType(
             List<TransportRoute_MIM> data,
             string transportType)
@@ -91,7 +87,6 @@
                 .ToList();
         }
 
-        // ===== SORT =====
         public List<TransportRoute_MIM> SortByTravelTime(
             List<TransportRoute_MIM> data,
             bool ascending = true)
@@ -101,7 +96,6 @@
                 : data.OrderByDescending(r => r.TravelTimeMinutes_MIM).ToList();
         }
 
-        // ===== STATISTICS =====
         public int GetCount(List<TransportRoute_MIM> data) => data.Count;
         public int GetSumTime(List<TransportRoute_MIM> data) => data.Sum(r => r.TravelTimeMinutes_MIM);
         public double GetAverageTime(List<TransportRoute_MIM> data) => data.Average(r => r.TravelTimeMinutes_MIM);

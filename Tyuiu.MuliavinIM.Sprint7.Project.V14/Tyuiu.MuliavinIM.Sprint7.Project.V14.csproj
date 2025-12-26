@@ -9,6 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="OxyPlot.Core" Version="2.2.0" />
+    <PackageReference Include="OxyPlot.WindowsForms" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Tyuiu.MuliavinIM.Sprint7.Project.V14.Lib\Tyuiu.MuliavinIM.Sprint7.Project.V14.Lib.csproj" />
   </ItemGroup>
 

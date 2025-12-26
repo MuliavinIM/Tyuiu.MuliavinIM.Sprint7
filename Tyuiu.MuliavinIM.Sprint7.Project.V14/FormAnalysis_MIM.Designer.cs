@@ -1,6 +1,7 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
 {
     partial class FormAnalysis_MIM
@@ -24,6 +25,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
 
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnalysis_MIM));
             buttonTable_MIM = new Button();
             buttonAnalysis_MIM = new Button();
@@ -32,7 +34,9 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             labelMinTime_MIM = new Label();
             labelMaxTime_MIM = new Label();
             labelAvgTime_MIM = new Label();
+            ChartRoutes_MIM = new OxyPlot.WindowsForms.PlotView();
             buttonHelp_MIM = new Button();
+            toolTip_MIM = new ToolTip(components);
             groupBoxStatistics_MIM.SuspendLayout();
             SuspendLayout();
             // 
@@ -44,11 +48,13 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonTable_MIM.Size = new Size(100, 35);
             buttonTable_MIM.TabIndex = 0;
             buttonTable_MIM.Text = "Таблица";
+            toolTip_MIM.SetToolTip(buttonTable_MIM, "Открыть таблицу");
             buttonTable_MIM.UseVisualStyleBackColor = true;
             buttonTable_MIM.Click += buttonTable_MIM_Click;
             // 
             // buttonAnalysis_MIM
             // 
+            buttonAnalysis_MIM.Enabled = false;
             buttonAnalysis_MIM.FlatStyle = FlatStyle.Flat;
             buttonAnalysis_MIM.Location = new Point(120, 10);
             buttonAnalysis_MIM.Name = "buttonAnalysis_MIM";
@@ -107,16 +113,33 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             labelAvgTime_MIM.TabIndex = 3;
             labelAvgTime_MIM.Text = "Среднее время в пути:";
             // 
+            // ChartRoutes_MIM
+            // 
+            ChartRoutes_MIM.Location = new Point(389, 59);
+            ChartRoutes_MIM.Name = "ChartRoutes_MIM";
+            ChartRoutes_MIM.PanCursor = Cursors.Hand;
+            ChartRoutes_MIM.Size = new Size(380, 280);
+            ChartRoutes_MIM.TabIndex = 4;
+            ChartRoutes_MIM.Text = "plotView1";
+            toolTip_MIM.SetToolTip(ChartRoutes_MIM, "График");
+            ChartRoutes_MIM.ZoomHorizontalCursor = Cursors.SizeWE;
+            ChartRoutes_MIM.ZoomRectangleCursor = Cursors.SizeNWSE;
+            ChartRoutes_MIM.ZoomVerticalCursor = Cursors.SizeNS;
+            // 
             // buttonHelp_MIM
             // 
             buttonHelp_MIM.FlatStyle = FlatStyle.Flat;
             buttonHelp_MIM.Image = (Image)resources.GetObject("buttonHelp_MIM.Image");
-            buttonHelp_MIM.Location = new Point(715, 4);
+            buttonHelp_MIM.Location = new Point(721, 2);
             buttonHelp_MIM.Name = "buttonHelp_MIM";
-            buttonHelp_MIM.Size = new Size(54, 49);
-            buttonHelp_MIM.TabIndex = 3;
-            buttonHelp_MIM.UseVisualStyleBackColor = true;
+            buttonHelp_MIM.Size = new Size(48, 43);
+            buttonHelp_MIM.TabIndex = 10;
+            toolTip_MIM.SetToolTip(buttonHelp_MIM, "Справка");
             buttonHelp_MIM.Click += buttonHelp_MIM_Click;
+            // 
+            // toolTip_MIM
+            // 
+            toolTip_MIM.Popup += toolTip_MIM_Popup;
             // 
             // FormAnalysis_MIM
             // 
@@ -125,6 +148,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             BackColor = SystemColors.ControlLight;
             ClientSize = new Size(781, 365);
             Controls.Add(buttonHelp_MIM);
+            Controls.Add(ChartRoutes_MIM);
             Controls.Add(buttonTable_MIM);
             Controls.Add(buttonAnalysis_MIM);
             Controls.Add(groupBoxStatistics_MIM);
@@ -134,8 +158,8 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             groupBoxStatistics_MIM.PerformLayout();
             ResumeLayout(false);
         }
-        private Button button1;
-        private Button button2;
+        private OxyPlot.WindowsForms.PlotView ChartRoutes_MIM;
         private Button buttonHelp_MIM;
+        private ToolTip toolTip_MIM;
     }
 }
