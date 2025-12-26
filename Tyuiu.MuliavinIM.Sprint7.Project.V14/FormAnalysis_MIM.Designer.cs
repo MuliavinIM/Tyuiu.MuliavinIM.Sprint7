@@ -39,9 +39,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             toolTip_MIM = new ToolTip(components);
             groupBoxStatistics_MIM.SuspendLayout();
             SuspendLayout();
-            // 
-            // buttonTable_MIM
-            // 
+
             buttonTable_MIM.FlatStyle = FlatStyle.Flat;
             buttonTable_MIM.Location = new Point(10, 10);
             buttonTable_MIM.Name = "buttonTable_MIM";
@@ -51,9 +49,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             toolTip_MIM.SetToolTip(buttonTable_MIM, "Открыть таблицу");
             buttonTable_MIM.UseVisualStyleBackColor = true;
             buttonTable_MIM.Click += buttonTable_MIM_Click;
-            // 
-            // buttonAnalysis_MIM
-            // 
+
             buttonAnalysis_MIM.Enabled = false;
             buttonAnalysis_MIM.FlatStyle = FlatStyle.Flat;
             buttonAnalysis_MIM.Location = new Point(120, 10);
@@ -62,9 +58,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonAnalysis_MIM.TabIndex = 1;
             buttonAnalysis_MIM.Text = "Анализ";
             buttonAnalysis_MIM.UseVisualStyleBackColor = true;
-            // 
-            // groupBoxStatistics_MIM
-            // 
+
             groupBoxStatistics_MIM.Controls.Add(labelTotalRoutes_MIM);
             groupBoxStatistics_MIM.Controls.Add(labelMinTime_MIM);
             groupBoxStatistics_MIM.Controls.Add(labelMaxTime_MIM);
@@ -76,45 +70,35 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             groupBoxStatistics_MIM.TabIndex = 2;
             groupBoxStatistics_MIM.TabStop = false;
             groupBoxStatistics_MIM.Text = "Статистика маршрутов";
-            // 
-            // labelTotalRoutes_MIM
-            // 
+
             labelTotalRoutes_MIM.AutoSize = true;
             labelTotalRoutes_MIM.Location = new Point(10, 44);
             labelTotalRoutes_MIM.Name = "labelTotalRoutes_MIM";
             labelTotalRoutes_MIM.Size = new Size(239, 20);
             labelTotalRoutes_MIM.TabIndex = 0;
             labelTotalRoutes_MIM.Text = "Общее количество маршрутов:";
-            // 
-            // labelMinTime_MIM
-            // 
+
             labelMinTime_MIM.AutoSize = true;
             labelMinTime_MIM.Location = new Point(10, 78);
             labelMinTime_MIM.Name = "labelMinTime_MIM";
             labelMinTime_MIM.Size = new Size(218, 20);
             labelMinTime_MIM.TabIndex = 1;
             labelMinTime_MIM.Text = "Минимальное время в пути:";
-            // 
-            // labelMaxTime_MIM
-            // 
+
             labelMaxTime_MIM.AutoSize = true;
             labelMaxTime_MIM.Location = new Point(10, 111);
             labelMaxTime_MIM.Name = "labelMaxTime_MIM";
             labelMaxTime_MIM.Size = new Size(223, 20);
             labelMaxTime_MIM.TabIndex = 2;
             labelMaxTime_MIM.Text = "Максимальное время в пути:";
-            // 
-            // labelAvgTime_MIM
-            // 
+
             labelAvgTime_MIM.AutoSize = true;
             labelAvgTime_MIM.Location = new Point(10, 145);
             labelAvgTime_MIM.Name = "labelAvgTime_MIM";
             labelAvgTime_MIM.Size = new Size(174, 20);
             labelAvgTime_MIM.TabIndex = 3;
             labelAvgTime_MIM.Text = "Среднее время в пути:";
-            // 
-            // ChartRoutes_MIM
-            // 
+
             ChartRoutes_MIM.Location = new Point(389, 59);
             ChartRoutes_MIM.Name = "ChartRoutes_MIM";
             ChartRoutes_MIM.PanCursor = Cursors.Hand;
@@ -125,9 +109,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             ChartRoutes_MIM.ZoomHorizontalCursor = Cursors.SizeWE;
             ChartRoutes_MIM.ZoomRectangleCursor = Cursors.SizeNWSE;
             ChartRoutes_MIM.ZoomVerticalCursor = Cursors.SizeNS;
-            // 
-            // buttonHelp_MIM
-            // 
+
             buttonHelp_MIM.FlatStyle = FlatStyle.Flat;
             buttonHelp_MIM.Image = (Image)resources.GetObject("buttonHelp_MIM.Image");
             buttonHelp_MIM.Location = new Point(721, 2);
@@ -136,13 +118,9 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonHelp_MIM.TabIndex = 10;
             toolTip_MIM.SetToolTip(buttonHelp_MIM, "Справка");
             buttonHelp_MIM.Click += buttonHelp_MIM_Click;
-            // 
-            // toolTip_MIM
-            // 
+
             toolTip_MIM.Popup += toolTip_MIM_Popup;
-            // 
-            // FormAnalysis_MIM
-            // 
+
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;

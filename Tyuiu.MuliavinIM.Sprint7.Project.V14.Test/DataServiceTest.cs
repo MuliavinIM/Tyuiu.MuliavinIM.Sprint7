@@ -89,6 +89,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14.Test
             Assert.AreEqual("Автобус", result[0].TransportType_MIM);
         }
 
+
         [TestMethod]
         public void SortByTravelTime_Ascending()
         {
@@ -135,6 +136,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14.Test
         {
             Assert.AreEqual(35, service.GetMaxTime(data));
         }
+
 
         [TestMethod]
         public void SaveAndLoadCsv_ShouldPreserveData()

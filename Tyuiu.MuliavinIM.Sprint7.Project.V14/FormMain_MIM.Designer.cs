@@ -48,9 +48,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             ((System.ComponentModel.ISupportInitialize)dataGridViewRoutes_MIM).BeginInit();
             groupBoxSearch_MIM.SuspendLayout();
             SuspendLayout();
-            // 
-            // buttonTable_MIM
-            // 
+
             buttonTable_MIM.Enabled = false;
             buttonTable_MIM.FlatStyle = FlatStyle.Flat;
             buttonTable_MIM.Location = new Point(10, 10);
@@ -58,9 +56,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonTable_MIM.Size = new Size(120, 35);
             buttonTable_MIM.TabIndex = 0;
             buttonTable_MIM.Text = "Таблица";
-            // 
-            // buttonAnalysis_MIM
-            // 
+
             buttonAnalysis_MIM.FlatStyle = FlatStyle.Flat;
             buttonAnalysis_MIM.Location = new Point(140, 10);
             buttonAnalysis_MIM.Name = "buttonAnalysis_MIM";
@@ -69,9 +65,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonAnalysis_MIM.Text = "Анализ";
             toolTipMIM.SetToolTip(buttonAnalysis_MIM, "Открыть анализ");
             buttonAnalysis_MIM.Click += buttonAnalysis_MIM_Click;
-            // 
-            // dataGridViewRoutes_MIM
-            // 
+
             dataGridViewRoutes_MIM.AllowUserToAddRows = false;
             dataGridViewRoutes_MIM.AllowUserToDeleteRows = false;
             dataGridViewRoutes_MIM.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -83,9 +77,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             dataGridViewRoutes_MIM.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridViewRoutes_MIM.Size = new Size(760, 230);
             dataGridViewRoutes_MIM.TabIndex = 2;
-            // 
-            // buttonAddRoute_MIM
-            // 
+
             buttonAddRoute_MIM.Image = (Image)resources.GetObject("buttonAddRoute_MIM.Image");
             buttonAddRoute_MIM.ImageAlign = ContentAlignment.MiddleLeft;
             buttonAddRoute_MIM.Location = new Point(8, 326);
@@ -96,9 +88,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonAddRoute_MIM.TextAlign = ContentAlignment.MiddleRight;
             toolTipMIM.SetToolTip(buttonAddRoute_MIM, "Добавить новую строку маршрута");
             buttonAddRoute_MIM.Click += buttonAddRoute_MIM_Click;
-            // 
-            // buttonEditRoute_MIM
-            // 
+
             buttonEditRoute_MIM.Image = (Image)resources.GetObject("buttonEditRoute_MIM.Image");
             buttonEditRoute_MIM.ImageAlign = ContentAlignment.MiddleLeft;
             buttonEditRoute_MIM.Location = new Point(119, 326);
@@ -109,9 +99,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonEditRoute_MIM.TextAlign = ContentAlignment.MiddleRight;
             toolTipMIM.SetToolTip(buttonEditRoute_MIM, "Включить режим редактирования");
             buttonEditRoute_MIM.Click += buttonEditRoute_MIM_Click;
-            // 
-            // buttonDeleteRoute_MIM
-            // 
+
             buttonDeleteRoute_MIM.Image = (Image)resources.GetObject("buttonDeleteRoute_MIM.Image");
             buttonDeleteRoute_MIM.ImageAlign = ContentAlignment.MiddleLeft;
             buttonDeleteRoute_MIM.Location = new Point(260, 326);
@@ -122,9 +110,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonDeleteRoute_MIM.TextAlign = ContentAlignment.MiddleRight;
             toolTipMIM.SetToolTip(buttonDeleteRoute_MIM, "Удалить выбранный маршрут");
             buttonDeleteRoute_MIM.Click += buttonDeleteRoute_MIM_Click;
-            // 
-            // buttonSaveData_MIM
-            // 
+
             buttonSaveData_MIM.Image = (Image)resources.GetObject("buttonSaveData_MIM.Image");
             buttonSaveData_MIM.ImageAlign = ContentAlignment.MiddleLeft;
             buttonSaveData_MIM.Location = new Point(359, 326);
@@ -135,9 +121,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonSaveData_MIM.TextAlign = ContentAlignment.MiddleRight;
             toolTipMIM.SetToolTip(buttonSaveData_MIM, "Сохранить данные в CSV-файл");
             buttonSaveData_MIM.Click += buttonSaveData_MIM_Click;
-            // 
-            // buttonLoadData_MIM
-            // 
+
             buttonLoadData_MIM.Image = (Image)resources.GetObject("buttonLoadData_MIM.Image");
             buttonLoadData_MIM.ImageAlign = ContentAlignment.MiddleLeft;
             buttonLoadData_MIM.Location = new Point(474, 326);
@@ -148,9 +132,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonLoadData_MIM.TextAlign = ContentAlignment.MiddleRight;
             toolTipMIM.SetToolTip(buttonLoadData_MIM, "Загрузить данные из CSV-файла");
             buttonLoadData_MIM.Click += buttonLoadData_MIM_Click;
-            // 
-            // groupBoxSearch_MIM
-            // 
+
             groupBoxSearch_MIM.Controls.Add(textBoxSearchRoute_MIM);
             groupBoxSearch_MIM.Controls.Add(buttonSearch_MIM);
             groupBoxSearch_MIM.Controls.Add(buttonResetSearch_MIM);
@@ -160,16 +142,12 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             groupBoxSearch_MIM.TabIndex = 8;
             groupBoxSearch_MIM.TabStop = false;
             groupBoxSearch_MIM.Text = "Поиск по номеру";
-            // 
-            // textBoxSearchRoute_MIM
-            // 
+
             textBoxSearchRoute_MIM.Location = new Point(10, 22);
             textBoxSearchRoute_MIM.Name = "textBoxSearchRoute_MIM";
             textBoxSearchRoute_MIM.Size = new Size(160, 23);
             textBoxSearchRoute_MIM.TabIndex = 0;
-            // 
-            // buttonSearch_MIM
-            // 
+
             buttonSearch_MIM.Location = new Point(10, 55);
             buttonSearch_MIM.Name = "buttonSearch_MIM";
             buttonSearch_MIM.Size = new Size(75, 30);
@@ -177,9 +155,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonSearch_MIM.Text = "Найти";
             toolTipMIM.SetToolTip(buttonSearch_MIM, "Найти номер маршрута");
             buttonSearch_MIM.Click += buttonSearch_MIM_Click;
-            // 
-            // buttonResetSearch_MIM
-            // 
+
             buttonResetSearch_MIM.Location = new Point(95, 55);
             buttonResetSearch_MIM.Name = "buttonResetSearch_MIM";
             buttonResetSearch_MIM.Size = new Size(75, 30);
@@ -187,9 +163,7 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonResetSearch_MIM.Text = "Сброс";
             toolTipMIM.SetToolTip(buttonResetSearch_MIM, "Сбросить фильтр");
             buttonResetSearch_MIM.Click += buttonResetSearch_MIM_Click;
-            // 
-            // buttonHelp_MIM
-            // 
+
             buttonHelp_MIM.FlatStyle = FlatStyle.Flat;
             buttonHelp_MIM.Image = (Image)resources.GetObject("buttonHelp_MIM.Image");
             buttonHelp_MIM.Location = new Point(722, 6);
@@ -198,13 +172,9 @@ namespace Tyuiu.MuliavinIM.Sprint7.Project.V14
             buttonHelp_MIM.TabIndex = 9;
             toolTipMIM.SetToolTip(buttonHelp_MIM, "Справка");
             buttonHelp_MIM.Click += buttonHelp_MIM_Click;
-            // 
-            // toolTipMIM
-            // 
+
             toolTipMIM.Popup += toolTipMIM_Popup;
-            // 
-            // FormMain_MIM
-            // 
+ 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
